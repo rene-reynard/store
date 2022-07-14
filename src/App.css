@@ -1,38 +1,113 @@
+@import "fonts/iconfont/material-icons.css";
+
 .App {
+  position: absolute;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-icons {
+  position: relative;
+  font-size: 50px;
+  margin-left: 1400px;
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  color: rgb(80, 77, 77);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CardsView {
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 30px 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ShopCard {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 7px 5px 1px gray;
+}
+
+.CardName {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.CardColor {
+  color: rgb(93, 91, 91);
+}
+
+.CardBuy {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 110px 20px 10px 20px;
+  color: rgb(186, 57, 57);
 }
 
-.App-link {
-  color: #61dafb;
+.CardButton {
+  width: 140px;
+  height: 30px;
+  border: 1px solid rgb(186, 57, 57);
+  border-radius: 20px;
+  color: rgb(186, 57, 57);
+  padding: 0px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ShopItem {
+  display: flex;
+  background-color: #f5f5f5;
+  width: 1320px;
+  height: 150px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.ItemName {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.ItemColor {
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(93, 91, 91);
+}
+
+.ItemBuy {
+  color: rgb(186, 57, 57);
+}
+
+.ItemButton {
+  margin-top: 50px;
+  margin-left: 260px;
+  width: 140px;
+  height: 30px;
+  border: 1px solid rgb(186, 57, 57);
+  border-radius: 20px;
+  color: rgb(186, 57, 57);
+  padding: 0px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ItemPrice {
+  color: rgb(186, 57, 57);
+  margin: 50px 0px 50px 420px;
 }
